@@ -27,16 +27,16 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Games</a>
+                    <a class="nav-link" href="#video">Games</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Standings</a>
+                    <a class="nav-link" href="#image">Standings</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Stats</a>
+                    <a class="nav-link" href="#slides">Stats</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Players</a>
+                    <a class="nav-link" href="#images">Players</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -50,7 +50,7 @@
      <div class="px-4 py-5 mb-5 text-center bg-light">
         <h1 class="display-5 fw-bold">RAY-Basketball</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">RAYYAN SPORTS IS A SPORTS ILLUSTRATED PLATFORM IN WHICH WE COLLABORATE WITH ESPN, OCULUS, NBA.COM AND MANY MORE. WE WANT MORE CROWD TO ENJOY THEIR FAVORITE SPORT ANYWHERE IN THE WORLD. FOR BEST GAMING COUPONS TRY OUR 30 DAY TRIAL TO JOIN E-SPORT EVENTS. 
+          <p class="lead mb-4">RAY BASKETBALL IS A SPORTS ILLUSTRATED PLATFORM IN WHICH WE COLLABORATE WITH ESPN, OCULUS, NBA.COM AND MANY MORE. WE WANT MORE CROWD TO ENJOY THEIR FAVORITE SPORT ANYWHERE IN THE WORLD. FOR BEST GAMING COUPONS TRY OUR 30 DAY TRIAL TO JOIN E-SPORT EVENTS. WE GIVE UPDATES ABOUT THE GAMES, STANDING, STATS AND PLAYERS. 
 
             THANK YOU!!!
             </p>
@@ -64,16 +64,16 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-sm-4 px-5 my-3">
-                <img src="NBA-logo.png" class="img-fluid rounded-circle mb-3 feature">
+                <img src="NBA-logo.jpg" class="img-fluid rounded-circle mb-3 feature">
                 <h5>NBA</h5>
             </div>
             <div class="col-sm-4 px-5 my-3">
-                    <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                    <h5></h5>
+                    <img src="ESPN-logo.png" class="img-fluid rounded-circle mb-3 feature">
+                    <h5>ESPN</h5>
             </div>
             <div class="col-sm-4 px-5 my-3">
-                <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                <h5>Column</h5>
+                <img src="R-logo.jpg" class="img-fluid rounded-circle mb-3 feature">
+                <h5>RAY-Sports</h5>
             </div>
         </div>
     </div>
@@ -81,7 +81,46 @@
     <!-- CUSTOM FONT -->
     <link rel="preload" href="fonts/Macfadden-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
+    <div class="container py-5 text-center video" id="video">
+        <div class="row py-5">
+          <div class="col pb-5">
+              <h1 class="text-center pb-1 fw-bold pb-5">Today's Game!!!</h1>
+              <iframe
+              width="700"
+              height="394"
+              src="https://www.youtube.com/embed/BUVMqMsgVqU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              ></iframe>
+          </div>
+        </div>
+      </div>
 
+      <div class="container py-5" id="tabs">
+        <div class="row py-5">
+            <div class="row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">News</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Schedule</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Teams</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <h4 class="pt-5 fw-bold" id="about">News</h1>
+                            <iframe width="700"
+                            height="394"
+                            src=https://www.nba.com/#stories/e99519be-8fce-f300-c9be-3a1293ee335a?openedReason=storyListTap</iframe>
+      
+    
+    <script src="script.js"></script>
 
 
 

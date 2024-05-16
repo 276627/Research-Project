@@ -2,3 +2,22 @@ body{
     background: rgb(180,58,58);
 background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.9107843821122199) 28%, rgba(230,190,197,1) 38%, rgba(228,228,228,1) 65%, rgba(92,94,249,1) 83%, rgba(16,19,232,0.47941183309261204) 100%);
 }
+
+    .video-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .play-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+    }
+    .play-button:hover {
+        background-color: #0056b3;
+    }
