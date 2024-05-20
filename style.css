@@ -21,3 +21,101 @@ background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.91078438
     .play-button:hover {
         background-color: #0056b3;
     }
+
+    .navbar-brand {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.9107843821122199) 28%, rgba(230,190,197,1) 38%, rgba(228,228,228,1) 65%, rgba(92,94,249,1) 83%, rgba(16,19,232,0.47941183309261204) 100%);
+
+    /*
+=================================================
+HERO SECTION
+=================================================
+*/
+.hero-section {
+    background-color: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.9107843821122199) 28%, rgba(230,190,197,1) 38%, rgba(228,228,228,1) 65%, rgba(92,94,249,1) 83%, rgba(16,19,232,0.47941183309261204) 100%);;
+    background-image: url("img/bg-image.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero-section h1 {
+    color: #000;
+    font-size: 56px;
+    font-weight: 900;
+  }
+  
+  .hero-section .lead {
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+    font-size: 22px;
+  }
+    /*
+=================================================
+FOOTER
+=================================================
+*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
