@@ -2,7 +2,29 @@ body{
     background: rgb(180,58,58);
 background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.9107843821122199) 28%, rgba(230,190,197,1) 38%, rgba(228,228,228,1) 65%, rgba(92,94,249,1) 83%, rgba(16,19,232,0.47941183309261204) 100%);
 }
-
+.quick-links i {
+    font-size: 3em;
+  }
+  .to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+  }
+  .nav-link {
+    color: #50a98a;
+  }
+  .nav-link:hover {
+    color:#3a7b64;
+  }
+  .btn-unique {
+    background-color: aquamarine;
+    color: #000;
+  }
+  .btn-unique:hover {
+    background-color: #50a98a;
+    color: #fff;
+  }
     .video-container {
         text-align: center;
         margin-top: 50px;
@@ -21,6 +43,11 @@ background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.91078438
     .play-button:hover {
         background-color: #0056b3;
     }
+    .presentation iframe {
+        width: 100%;
+        max-width: 856px;
+        height: 518px;
+      }
 
     .navbar-brand {
         font-weight: 900;
@@ -32,7 +59,7 @@ background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.91078438
 HERO SECTION
 =================================================
 */
-.hero-section {
+.hero-section{
     background-color: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(221,3,3,0.9107843821122199) 28%, rgba(230,190,197,1) 38%, rgba(228,228,228,1) 65%, rgba(92,94,249,1) 83%, rgba(16,19,232,0.47941183309261204) 100%);;
     background-image: url("img/bg-image.png");
     background-position: center;
