@@ -12,10 +12,13 @@
        <link rel="stylesheet" href="style.css">
        <!-- JAVASCRIPT -->
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   </head>
+       <!-- CUSTOM FONT -->
+      <link rel="preload" href="fonts/Macfadden-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+      </head>
    <body>
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">RAY-Basketball</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,9 +89,7 @@
         </div>
     </div>
 
-    <!-- CUSTOM FONT -->
-    <link rel="preload" href="fonts/Macfadden-Regular.woff2" as="font" type="font/woff2" crossorigin>
-
+   
     <div class="container py-5 text-center video" id="video">
         <div class="row py-5">
           <div class="col pb-5">
@@ -106,101 +107,170 @@
         </div>
       </div>
 
-      <div class="container py-5" id="tabs">
-        <div class="row py-5">
-            <div class="row">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="updates-tab" data-bs-toggle="tab" data-bs-target="#updates-tab-pane" type="button" role="tab" aria-controls="updates-tab-pane" aria-selected="true">Updates</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="schedule-tab" data-bs-toggle="tab" data-bs-target="#schedule-tab-pane" type="button" role="tab" aria-controls="schedule-tab-pane" aria-selected="false">Schedule</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="teams-tab" data-bs-toggle="tab" data-bs-target="#teams-tab-pane" type="button" role="tab" aria-controls="teams-tab-pane" aria-selected="false">Teams</button>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="updates-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <h4 class="pt-5 fw-bold" id="about">Updates</h1>
-                            <iframe width="700"
-                            height="394"
-                            src=https://www.nba.com/</iframe>
+        <!-- TABS SECTION START -->
+        <div class="container py-5" id="tabs">
+          <div class="row py-5">
+              <div class="row">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="updates-tab" data-bs-toggle="tab" data-bs-target="#updates-tab-pane" type="button" role="tab" aria-controls="updates-tab-pane" aria-selected="true">Updates</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="schedule-tab" data-bs-toggle="tab" data-bs-target="#schedule-tab-pane" type="button" role="tab" aria-controls="schedule-tab-pane" aria-selected="false">Schedule</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="espn recent updates-tab" data-bs-toggle="tab" data-bs-target="#espn recent updates-tab-pane" type="button" role="tab" aria-controls="espn recent updates-tab-pane" aria-selected="false">ESPN recent updates</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="updates-tab-pane" role="tabpanel" aria-labelledby="updates-tab" tabindex="0">
+                          <h4 class="pt-5 fw-bold">Updates</h4>
+                          <iframe width="1400"
+                            height="700"
+                            src="https://www.nba.com/"></iframe>
 
-                            <div class="bg-dark text-white py-5 presentation" id="slides">
-                              <div class="container">
-                                <div class="row">
-                                  <div class="col-md py-5">
-                                    <h2 class="fw-bold">Mauris eget</h2>
-                                    <p>
-                                      Ut ultrices eleifend orci, quis venenatis justo tempor nec.
-                                      Suspendisse consectetur fringilla ex, eu porta tellus mollis sed.
-                                      Sed a congue urna. Mauris eget lacus quam.
-                                    </p>
-                                    <p>
-                                      Sed augue risus, sollicitudin sollicitudin eleifend posuere,
-                                      congue mattis eros. Proin mollis est dolor, sed pulvinar enim
-                                      facilisis eget.
-                                    </p>
-                                    <button type="button" class="btn btn-lg btn-dark btn-unique">
-                                        Button <i class="bi bi-chevron-right"></i>
-                                    </button>
-                                  </div>
-                                  <div class="col-md-8 py-5">
-                                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQenywRoM6_9PyrgVZ2YPSLgJe1MjioV3rJkxFR5yeuGu1__DHXvLu-2Cc8Te_rJ8u62YRBb-K8P_PL/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="576" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                                  </div>
-                                </div>
+                            <div class="card" id="premium-plan">
+                              <h2>TRY OUR NEW FEATURE SPORTS VR
+                              </h2>
+                              <p class="price">$29.99/month</p>
+                              <ul>
+                                  <li><iframe width="125"
+                                    height="100"
+                                    src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ4T_n2WmCwpUi3ENFNEMzUhr7FDTg-ydbQqEw_Amyan8_z5fvlgB0YTrPz_zYVyvooXbroEltyi8WQjaJFx0VMuUxiC1kXYt47quVAjghd8sfwFSUpZSKl"></iframe></li>
+                                  <li>Order 
+                                    White⚪️ for 355.99﹩
+                                    Black⚫️ for 290.99﹩
+                                  </li>
+                                  <li>FOR 30% OFFER    
+                                  </li>
+                              </ul>
+                              <button onclick="selectPlan('Premium')">Buy</button>
+                          </div>
+                      </div>
+                      <div id="selected-plan-message"></div>
+              </main>
+                      </div>
+                      
+                      <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="schedule-tab-pane" role="tabpanel" aria-labelledby="schedule-tab" tabindex="0">
+                          <h4 class="pt-5 fw-bold">Schedule</h4>
+                              <p>
+                                <div class="form-container">
+                                  <h1>Schedule a Game</h1>
+                                  <form id="gameScheduleForm">
+                                      <div class="form-group">
+                                          <label for="name">Name</label>
+                                          <input type="text" id="name" name="name" required>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="email">Email</label>
+                                          <input type="email" id="email" name="email" required>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="date">Game Date</label>
+                                          <input type="date" id="date" name="date" required>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Game Type</label>
+                                          <div class="radio-group">
+                                              <input type="radio" id="single" name="gameType" value="single" required>
+                                              <label for="single">Single ticket</label>
+                                              <input type="radio" id="multi" name="gameType" value="multi" required>
+                                              <label for="multi">Multi ticket</label>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="comments">Additional Comments</label>
+                                          <textarea id="comments" name="comments" rows="4"></textarea>
+                                      </div>
+                                      <button type="submit">Submit</button>
+                                  </form>
+                                  <div id="form-message"></div>
                               </div>
-                            </div>
-
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                        <h4 class="pt-5 fw-bold" id="about">Schedule</h4>
-                        <p>
-                                    
-                        </p>
-                        <div class="map" id="map"></div>
+                              </p>
+                      </div>
+                      <div class="tab-content" id="myTabContent"></div>
+                      <div class="espn recent updates-pane fade" id="espn recent updates-tab-pane" role="tabpanel" aria-labelledby="espn recent updates-tab" tabindex="0">
+                          <h4 class="pt-5 fw-bold">ESPN recent updates</h4>
+                          <p>
+                          <iframe width="1400"
+                            height="700"
+                            src="https://www.espn.com/nba/"></iframe>     
+                          </p>   
                             
-                        <footer>
-                          <div class="footer-container">
-                              <div class="footer-section">
-                                  <h3>About Us</h3>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dolor eget sapien malesuada aliquam.</p>
-                              </div>
-                              <div class="footer-section">
-                                  <h3>Quick Links</h3>
-                                  <ul>
-                                      <li><a href="#">Home</a></li>
-                                      <li><a href="#">Services</a></li>
-                                      <li><a href="#">About</a></li>
-                                      <li><a href="#">Contact</a></li>
-                                  </ul>
-                              </div>
-                              <div class="footer-section">
-                                  <h3>Follow Us</h3>
-                                  <ul class="social-media">
-                                      <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                                      <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                                      <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
-                                  </ul>
-                              </div>
-                              <div class="footer-section">
-                                  <h3>Contact Us</h3>
-                                  <p>Email: 276627@glenbrook225.org</p>
-                                  <p>Phone: None</p>
-                              </div>
-                          </div>
-                          <div class="footer-bottom">
-                              <p>&copy; RAY-Basketball. All rights reserved.</p>
-                          </div>
-                      </footer>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+      </div>
+      <!-- TABS SECTION END -->
+
+      <!-- FOOTER START -->
+      <div class="bg-dark text-white py-5 footer">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-sm-3 pb-5">
+                <h5>About Us</h3>
+                <p><h1>About Us</h1>
+                  <p>Welcome to our Basketball Sports website! We are dedicated to bringing you the latest updates, news, and information about NBA basketball teams.</p>
+                  
+                  <h2>Our Mission</h2>
+                  <p>Our mission is to promote the sport of basketball and provide a platform for players and fans to stay connected and informed. We strive to inspire and develop young athletes through our comprehensive games, big events, and all-star seasons .</p>
+                  
+                  <h2>Our Team</h2>
+                  <p>Our team consists of dedicated players, coaches, and support staff who are passionate about basketball. We believe in teamwork, perseverance, and sportsmanship, and we work hard to embody these values both on and off the court.</p>
+                  
+                  <h2>History</h2>
+                  <p>Website founded in 2024, we started to get more support of the fans and were sponsored by none other but the NBA and ESPN.</p>
+                  
+                  <h2>Community Involvement</h2>
+                  <p>We are committed to giving back to our community. Through various outreach programs and events, we aim to foster a love for basketball and provide opportunities for youth engagement and development.</p>
+                  
+                  <h2>Contact Us</h2>
+                  <p>If you have any questions, comments, or would like to get involved, please contact us</a>. We would love to hear from you!</p></p>
+            </div>
+            <div class="col-sm-3 pb-5">
+                <h5>Quick Links</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 pb-5">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 pb-5">
+              <h3>Contact Us</h3>
+              <p>Email: 276627@glenbrook225.org</p>
+              <p>Phone: None</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER END -->
+
+     
+                            
+     
+      <div class="footer-bottom">
+            <p>&copy; RAY-Basketball. All rights reserved.</p>
+        </div>
+      </footer>
                      
 
                            
 
 
-<a href="#nav">
-  <i class="bi bi-arrow-up-circle-fill to-top text-black"></i>
-</a>
+    <a href="#nav">
+      <i class="bi bi-arrow-up-circle-fill to-top text-black"></i>
+    </a>
     
     <script src="script.js"></script>
 
