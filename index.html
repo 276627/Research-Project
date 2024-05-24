@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#slides">Home</a>
+                    <a class="nav-link" aria-current="page" href="#hero-section">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#video">Games</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#about">Updates for all categories</a>
+                    <a class="nav-link" href="#tabs">Updates for all categories</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#footer">About</a>
@@ -119,13 +119,13 @@
                         <button class="nav-link" id="schedule-tab" data-bs-toggle="tab" data-bs-target="#schedule-tab-pane" type="button" role="tab" aria-controls="schedule-tab-pane" aria-selected="false">Schedule</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="espn recent updates-tab" data-bs-toggle="tab" data-bs-target="#espn recent updates-tab-pane" type="button" role="tab" aria-controls="espn recent updates-tab-pane" aria-selected="false">ESPN recent updates</button>
+                        <button class="nav-link" id="rayyan sports-tab" data-bs-toggle="tab" data-bs-target="#rayyan-sports-tab-pane" type="button" role="tab" aria-controls="rayyan-sports-tab-pane" aria-selected="false">RAYYAN-SPORTS</button>
                       </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
                       <div class="tab-pane fade show active" id="updates-tab-pane" role="tabpanel" aria-labelledby="updates-tab" tabindex="0">
                           <h4 class="pt-5 fw-bold">Updates</h4>
-                          <iframe width="1400"
+                          <iframe width="100%"
                             height="700"
                             src="https://www.nba.com/"></iframe>
 
@@ -134,7 +134,7 @@
                               </h2>
                               <p class="price">$29.99/month</p>
                               <ul>
-                                  <li><iframe width="125"
+                                  <li><iframe width="100%"
                                     height="100"
                                     src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ4T_n2WmCwpUi3ENFNEMzUhr7FDTg-ydbQqEw_Amyan8_z5fvlgB0YTrPz_zYVyvooXbroEltyi8WQjaJFx0VMuUxiC1kXYt47quVAjghd8sfwFSUpZSKl"></iframe></li>
                                   <li>Order 
@@ -147,7 +147,7 @@
                               <button onclick="selectPlan('Premium')">Buy</button>
                           </div>
                       </div>
-                      <div id="selected-plan-message"></div>
+                      
               </main>
                       </div>
                       
@@ -190,13 +190,26 @@
                               </p>
                       </div>
                       <div class="tab-content" id="myTabContent"></div>
-                      <div class="espn recent updates-pane fade" id="espn recent updates-tab-pane" role="tabpanel" aria-labelledby="espn recent updates-tab" tabindex="0">
-                          <h4 class="pt-5 fw-bold">ESPN recent updates</h4>
-                          <p>
-                          <iframe width="1400"
-                            height="700"
-                            src="https://www.espn.com/nba/"></iframe>     
-                          </p>   
+                      <div class="rayyan-sports-pane fade" id="rayyan-sports-tab-pane" role="tabpanel" aria-labelledby="rayyan-sports-tab" tabindex="0">
+                          <h4 class="pt-5 fw-bold">RAY-Basketball</h4>
+                          <div id="selected-plan-message"></div>
+                      <div class="bg-dark text-white py-5 presentation" id="slides">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md py-5">
+                              <h2 class="fw-bold">RAYYAN SPORTS</h2>
+                              <p>
+                                This presentation shows the mobile version and my previous project. I improved it into a website. 
+                              </p>
+                            </div>
+                            <div class="col-md-8 py-5">
+                              <iframe src="https://docs.google.com/presentation/d/1BuasZdbHcvvveBVVXMCJk1qTtTMuPIxdVlLU9oDe6QM/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="576" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                          
+                             
                             
                       </div>
                     </div>
@@ -207,7 +220,7 @@
 
       <!-- FOOTER START -->
       <div class="bg-dark text-white py-5 footer">
-        <div class="container py-5">
+        <div class="container py-5" id="footer">
           <div class="row">
             <div class="col-sm-3 pb-5">
                 <h5>About Us</h3>
@@ -226,8 +239,6 @@
                   <h2>Community Involvement</h2>
                   <p>We are committed to giving back to our community. Through various outreach programs and events, we aim to foster a love for basketball and provide opportunities for youth engagement and development.</p>
                   
-                  <h2>Contact Us</h2>
-                  <p>If you have any questions, comments, or would like to get involved, please contact us</a>. We would love to hear from you!</p></p>
             </div>
             <div class="col-sm-3 pb-5">
                 <h5>Quick Links</h3>
@@ -254,13 +265,14 @@
           </div>
         </div>
       </div>
+
       <!-- FOOTER END -->
 
      
                             
      
       <div class="footer-bottom">
-            <p>&copy; RAY-Basketball. All rights reserved.</p>
+            <R>&copy; RAY-Basketball. All rights reserved.</R>
         </div>
       </footer>
                      

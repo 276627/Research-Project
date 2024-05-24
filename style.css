@@ -99,6 +99,7 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
 .footer-container {
@@ -247,7 +248,7 @@ main {
 }
 
 .pricing {
-  margin-top: 50px;
+  margin-top: 50%;
 }
 
 .pricing h1 {
@@ -311,4 +312,25 @@ button:hover {
   margin-top: 20px;
   font-size: 18px;
   color: #333;
+}
+#espn-widget {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#espn-widget h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#scores {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.score-item {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
 }
