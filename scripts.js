@@ -71,3 +71,74 @@ document.addEventListener('DOMContentLoaded', function() {
     updateScores();
     setInterval(updateScores, 60000); // Update scores every 60 seconds
 });
+
+document.getElementById('watchButton').addEventListener('click', function() {
+    var videoContainer = document.getElementById('videoContainer');
+    var youtubeVideo = document.getElementById('youtubeVideo');
+    
+    // Set the YouTube video URL
+    youtubeVideo.src = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    
+    // Display the video container
+    videoContainer.style.display = 'block';
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetchNews();
+    fetchScores();
+    fetchStandings();
+    fetchHighlights();
+});
+
+function fetchNews() {
+    fetch('https://www.cbssports.com/nba/news')  // Replace with actual API endpoint
+        .then(response => response.json())
+        .then(data => {
+            let newsContent = document.getElementById('news-content');
+            data.articles.forEach(article => {
+                let articleElement = document.createElement('div');
+                articleElement.innerHTML = `<h3>${article.title}</h3><p>${article.description}</p>`;
+                newsContent.appendChild(articleElement);
+            });
+        });
+}
+
+function fetchScores() {
+    fetch('https://www.cbssports.com/nba/scores')  // Replace with actual API endpoint
+        .then(response => response.json())
+        .then(data => {
+            let scoresContent = document.getElementById('scores-content');
+            data.scores.forEach(score => {
+                let scoreElement = document.createElement('div');
+                scoreElement.innerHTML = `<p>${score.game}: ${score.score}</p>`;
+                scoresContent.appendChild(scoreElement);
+            });
+        });
+}
+
+function fetchStandings() {
+    fetch('https://www.cbssports.com/nba/standings')  // Replace with actual API endpoint
+        .then(response => response.json())
+        .then(data => {
+            let standingsContent = document.getElementById('standings-content');
+            data.standings.forEach(team => {
+                let teamElement = document.createElement('div');
+                teamElement.innerHTML = `<p>${team.rank}. ${team.team} - ${team.wins}W - ${team.losses}L</p>`;
+                standingsContent.appendChild(teamElement);
+            });
+        });
+}
+
+function fetchHighlights() {
+    fetch('https://www.cbssports.com/nba/highlights')  // Replace with actual API endpoint
+        .then(response => response.json())
+        .then(data => {
+            let highlightsContent = document.getElementById('highlights-content');
+            data.highlights.forEach(highlight => {
+                let highlightElement = document.createElement('div');
+                highlightElement.innerHTML = `<h3>${highlight.title}</h3><video controls src="${highlight.url}"></video>`;
+                highlightsContent.appendChild(highlightElement);
+            });
+        });
+}
